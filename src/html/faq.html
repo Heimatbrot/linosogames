@@ -9,30 +9,58 @@
     <title>Linoso Games</title>
 </head>
 <body>
-    <body>
-        <header>
-            <h1>LINOSO GAMES</h1>
-            <nav>
-                    <a href="../../index.html">Linoso Games</a>
-                    <a href="winners.html">Die Gewinner</a>
-                    <a href="tips.html">Tipps und Tricks</a>
-                    <a href="rules.html">Regeln</a>
-                    <a href="faq.html">FAQ</a>
-                    <a href="participants.html">Participants only</a>
-            </nav>
-        </header>
-        <section class="intro">
-          <h1>HÄUFIG GESTELLTE FRAGEN</h1>
-          <p>This is the homepage of Linoso Games.</p>
-        </section>
-      </body>
-      <footer>
+    <header>
+        <div class="hamburger">
+            <a href="../../index.html" class="active" style="font-weight: bold;">LINOSO GAMES</a>
+            <hr>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="../../index.html">Linoso Games</a>
+                <a href="winners.html">Die Gewinner</a>
+                <a href="tips.html">Tipps und Tricks</a>
+                <a href="rules.html">Regeln</a>
+                <a href="faq.html">FAQ</a>
+                <a href="participants.html">Participants only</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="hidenav">
+            <h1><a href="../../index.html">LINOSO GAMES</a></h1>
+            <hr>
+        </div>     
+        <nav>
+            <a href="../../index.html">Linoso Games</a>
+            <a href="winners.html">Die Gewinner</a>
+            <a href="tips.html">Tipps und Tricks</a>
+            <a href="rules.html">Regeln</a>
+            <a href="faq.html">FAQ</a>
+            <a href="participants.html">Participants only</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>HÄUFIG GESTELLTE FRAGEN</h1>
+        <p>Frequently Asked Questions (FAQ)</p>
+      </section>
+
+      <section>
+        <h2>FAQ</h2><hr>
+        <h3>WARUM GIBT ES DIE LINOSO GAMES?</h3>
+        <p>Die Erfahrung hat gezeigt, dass eine "0815" Geburtstagsfeier immer eintönig und normal ist. Eines frühen Morgens, kam dem Jüngern Linus also die Idee, seine Geburtstagsfeier zu revolutionieren. Das Ziel war es, weg vom Standard zurück in die Vergangenheit zu kommen. Die Idee kein übliches Fest zu feiern war geboren. Doch wie soll das ganze aussehen? Um diese Frage zu klären, kontaktierte er seine beiden Freunde (Sean und Marc), holte ein bisschen Kreativität fördernden Weizen-Sirup. Boom die Linoso Games sind da!
+        </p>
+      </section>
+
+</body>
+    <footer>
         <ul class="no-bullets">
             <li><h2>LINOSO GAMES</h2></li>
             <li><h5>JÄHRLICHE VERANSTALTUNG MIT KINDERGEBURTSTAGSSPIELEN, ZIEL IST HALLENSTADION-AUSTRAGUNG MIT SPONSOREN UND LIVE-ÜBERTRAGUNG IM FERNSEHER.</h5></li>
             <li><h5>©​2022 | Linoso Games</h5></li>
         </ul>
-      </footer>
-    <script src="src/javascript/index.js"></script>
+    </footer>
+    <script src="../javascript/faq.js"></script>
 </body>
 </html>

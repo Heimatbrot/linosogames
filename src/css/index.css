@@ -3,21 +3,25 @@ body {
     text-align: center;
 }
 header {
-    background-image: url('header-background.jpg');
     height: 20%;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 hr{
-    background-color: #515151;
+    background-color: #bababa;
     height: 2px;
     border: none;
 }
 nav {
 
     background-color: #f1ede3;
-    color: #515151;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +32,67 @@ nav {
     right: 0;
     left: 0; 
 }
+/* Style the navigation menu */
+.hamburger {
+    overflow: hidden;
+    background-color: #f1ede3;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .hamburger #myLinks {
+    display: none;
+    font-size:x-small;
+    font-weight: bold;
+  }
+  
+  /* Style navigation menu links */
+  .hamburger a {
+    color: black;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 200%;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .hamburger a.icon {
+    background: #f1ede3;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .hamburger a:hover {
+    background-color: #f1ede3;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #f1ede3;
+  }
+
+  @media (max-width: 767px) {
+    .hamburger {
+      display: block;
+    }
+    nav{
+        display: none;
+    }
+    .hidenav{
+        display:none;
+    }
+  }
+
+  @media (min-width: 768px){
+    .hamburger {
+        display: none;
+    }
+  }
+  
 nav a:hover {
     color: #d0c6ac;
 }
