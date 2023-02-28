@@ -2,22 +2,40 @@
 <html lang="de">
 <head>
     <link rel="stylesheet" type="text/css" href="src/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Linoso Games</title>
 </head>
 <body>
     <body>
         <header>
-          <nav>
-            <a href="index.html">Linoso Games</a>
-            <a href="src/html/winners.html">Die Gewinner</a>
-            <a href="src/html/tips.html">Tipps und Tricks</a>
-            <a href="src/html/rules.html">Regeln</a>
-            <a href="src/html/faq.html">FAQ</a>
-            <a href="src/html/participants.html">Participants only</a>
-          </nav>
+            <h1>LINOSO GAMES</h1>
+            <div class="nospace">
+                <a class="active">Menu</a>
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="index.html">Linoso Games</a>
+                    <a href="src/html/winners.html">Die Gewinner</a>
+                    <a href="src/html/tips.html">Tipps und Tricks</a>
+                    <a href="src/html/rules.html">Regeln</a>
+                    <a href="src/html/faq.html">FAQ</a>
+                    <a href="src/html/participants.html">Participants only</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            <nav class="space">
+                    <a href="index.html">Linoso Games</a>
+                    <a href="src/html/winners.html">Die Gewinner</a>
+                    <a href="src/html/tips.html">Tipps und Tricks</a>
+                    <a href="src/html/rules.html">Regeln</a>
+                    <a href="src/html/faq.html">FAQ</a>
+                    <a href="src/html/participants.html">Participants only</a>
+            </nav>
         </header>
         <section>
           <h1>Linoso Games</h1>
@@ -51,5 +69,6 @@
             <li><h5>©​2022 | Linoso Games</h5></li>
         </ul>
       </footer>
+    <script src="src/javascript/index.js"></script>
 </body>
 </html>

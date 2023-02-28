@@ -18,6 +18,8 @@ nav {
     font-size: larger;
     text-transform: uppercase;
     font-family: sans-serif;
+    right: 0;
+    left: 0;
 }
 nav a:hover {
     color: #f1ede3;
@@ -28,7 +30,8 @@ nav a {
     font-weight: bold;
     padding: 1%;
     border-radius: 4%;
-}
+}  
+  
 section {
     padding: 1rem;
     font-family: sans-serif;
@@ -46,8 +49,76 @@ footer {
     justify-content: center;
     align-items: center;
     display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .no-bullets {
     font-weight: lighter;
     list-style: none;
 }
+
+
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #515151;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: #515151;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #515151;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #515151;
+    color: #515151;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #d0c6ac;
+    color: #515151;
+  }
+
+  .space {
+    background-color: #d0c6ac;
+    color: #515151;
+  }
+
+.nospace {
+    background-color: #d0c6ac;
+    color: #515151;
+}
+
+  @media (max-width: 767px) {
+    .space {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .nospace{
+        display:none;
+    }
+  }
