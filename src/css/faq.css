@@ -46,6 +46,7 @@
   padding: auto;
   background-color: #f1ede3;
   border-radius: 5px;
+  color: #444;
 }
 
 .formtext {
@@ -57,19 +58,28 @@
   max-width: 97%;
   min-height: 9rem;
   align-self: center;
+  color: #444;
+  border-style: solid 2px;
 }
 
 .formlayout {
   background-color: #dbd3bf;
   padding: 2%;
   line-height: 1.5;
+  font-weight: bold;
+  color: #444;
 }
 
 .formbutton {
-  background-color: #f1f1f1;
+  background-color: #f1ede3;
   border-radius: 5px;
+  color: #444;
+  font-weight: bold;
+  width: 8rem;
+  height: 2rem;
+  font-size: large;
 }
 
 .formbutton:hover {
-  background-color: #dfdfdf;
+  background-color: #f1f1f1;
 }
