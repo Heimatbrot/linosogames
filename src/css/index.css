@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'patua_oneregular';
+    src: url('../other/patuaone-regular-webfont.woff') format('woff'),
+         url('../other/patuaone-regular-webfont.woff2') format('woff2');
+    font-weight: thin;
+    font-style: normal;
+}
+
 body {
     background-color: #f1ede3;
     text-align: center;
@@ -82,7 +90,16 @@ nav {
     size: 8rem;
     color:#f8f0dc;
     font-size: xx-large;
+    font-family: 'patua_oneregular';
   }
+
+  .intro {
+    background-color: #d0c6ac;
+    font-size: xx-large;
+    font-weight: 100;
+    font-family: 'patua_oneregular';
+    color:#515151;
+}
 
   @media (max-width: 767px) {
     .hamburger {
@@ -95,6 +112,9 @@ nav {
         display:none;
     }
     .intro_index{
+      font-size: medium;
+    }
+    .intro{
       font-size: medium;
     }
   }
@@ -143,10 +163,6 @@ footer {
     padding: 0;
     margin: 0;
     text-align: center;
-}
-
-.intro {
-    background-color: #d0c6ac;
 }
 
 
