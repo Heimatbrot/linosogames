@@ -75,6 +75,7 @@ nav {
     background-color: #f1ede3;
   }
 
+
   @media (max-width: 767px) {
     .hamburger {
       display: block;
