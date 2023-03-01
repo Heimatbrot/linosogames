@@ -193,6 +193,7 @@ h3{
   .content{
     padding-left: 0%;
     padding-right: 0%;
+    line-height: 1.5;
   }
 }
 @media (min-width: 768px){
