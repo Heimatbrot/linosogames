@@ -7,3 +7,7 @@ function hamburger() {
       x.style.display = "block";
     }
   }
+
+  if (navigator && navigator.serviceWorker) {
+    navigator.serviceWorker.register('../other/sw.js');
+  }
