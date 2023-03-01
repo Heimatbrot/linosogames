@@ -35,3 +35,40 @@
 #titeltop {
     background-color: #f1ede3;
 }
+
+.formhead{
+  text-align: center;
+  padding: auto;
+}
+
+.forminput{
+  text-align: left;
+  padding: auto;
+  background-color: #f1ede3;
+  border-radius: 5px;
+}
+
+.formtext {
+  text-align: left;
+  padding: auto;
+  background-color: #f1ede3;
+  border-radius: 5px;
+  width: 80%;
+  min-height: 9rem;
+  align-self: center;
+}
+
+.formlayout {
+  background-color: #dbd3bf;
+  padding: 2%;
+  line-height: 1.5;
+}
+
+.formbutton {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.formbutton:hover {
+  background-color: #dfdfdf;
+}
