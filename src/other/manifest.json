@@ -1,0 +1,20 @@
+{
+    "short_name": "Linoso Games",
+    "name": "Linoso Games",
+    "icons": [
+      {
+        "src": "../img/favicon.ico",
+        "sizes": "32x32",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "../img/linosogames_squared.png",
+        "type": "image/png",
+        "sizes": "1200x1200"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
