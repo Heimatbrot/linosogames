@@ -53,7 +53,8 @@
   padding: auto;
   background-color: #f1ede3;
   border-radius: 5px;
-  width: 80%;
+  min-width: 80%;
+  max-width: 97%;
   min-height: 9rem;
   align-self: center;
 }
