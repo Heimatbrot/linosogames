@@ -106,6 +106,9 @@ nav {
     height: 300px;
     align-content: center;
   }
+  .intro_caption{
+    -webkit-text-stroke: 1px #d0c6ac;
+  }
 
   .intro {
     background-color: #d0c6ac;
