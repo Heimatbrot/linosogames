@@ -92,6 +92,18 @@ nav {
     font-size: xx-large;
     font-family: 'patua_oneregular';
   }
+  .intro_winner {
+    background-image: url("../img/winner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    size: 8rem;
+    color:#f8f0dc;
+    font-size: xx-large;
+    font-family: 'patua_oneregular';
+    height: 300px;
+    align-content: center;
+  }
 
   .intro {
     background-color: #d0c6ac;
@@ -116,6 +128,10 @@ nav {
     }
     .intro{
       font-size: medium;
+    }
+    .intro_winner{
+      font-size: medium;
+      height: 100%;
     }
   }
 
