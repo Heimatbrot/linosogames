@@ -47,10 +47,13 @@
   background-color: #f1ede3;
   border-radius: 5px;
   color: #444;
+  border-color: #444;
+  border-style: solid 1px;
 }
 
 .formtext {
   text-align: left;
+  border-color: #444;
   padding: auto;
   background-color: #f1ede3;
   border-radius: 5px;
@@ -82,4 +85,6 @@
 
 .formbutton:hover {
   background-color: #f1f1f1;
+  border-style: solid 1px;
+  border-color: #444;
 }
