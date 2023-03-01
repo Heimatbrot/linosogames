@@ -135,10 +135,11 @@ h1 {
 /*footer*/
 footer {
     background-color: #d0c6ac;
+    color: #515151;
     text-align: center;
     height: 10rem;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'patua_oneregular';
     justify-content: center;
     align-items: center;
     display: flex;
