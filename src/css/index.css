@@ -74,7 +74,15 @@ nav {
   .active {
     background-color: #f1ede3;
   }
-
+  .intro_index {
+    background-image: url("../img/sackhuepfen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    size: 8rem;
+    color:#f8f0dc;
+    font-size: xx-large;
+  }
 
   @media (max-width: 767px) {
     .hamburger {
@@ -85,6 +93,9 @@ nav {
     }
     .hidenav{
         display:none;
+    }
+    .intro_index{
+      font-size: medium;
     }
   }
 
@@ -136,4 +147,9 @@ footer {
 
 .intro {
     background-color: #d0c6ac;
+}
+
+
+.content{
+  text-align: left;
 }
