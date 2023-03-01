@@ -81,6 +81,8 @@
   width: 8rem;
   height: 2rem;
   font-size: large;
+  border-style: solid 1px;
+  border-color: #444;
 }
 
 .formbutton:hover {
