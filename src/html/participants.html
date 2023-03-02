@@ -52,16 +52,27 @@
         <p>let the games begin!</p>
       </section>
 
+
+
+
+
       <div class="content">
       <section>
         <h2>coming soon</h2><hr>
-        <h3>coming soon</h3>
-        <p>
-            coming soon
-        </p>
+
+        <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Suche nach Namen">
+        <table id="myTable" class="table">
+         <tr class="tr">
+            <th onclick="sortTable(0)">Name</th>
+            <th onclick="sortTable(1)">Teilnahmen</th>
+            <th onclick="sortTable(2)">Bronze</th>
+            <th onclick="sortTable(3)">Silber</th>
+            <th onclick="sortTable(4)">Gold</th>
+         </tr>
+        </table>
+
       </section>
       </div>
-
 </body>
     <footer>
         <ul class="no-bullets">
@@ -71,5 +82,4 @@
         </ul>
     </footer>
     <script src="../javascript/participants.js"></script>
-</body>
 </html>
