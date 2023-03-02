@@ -54,6 +54,21 @@ h2 {
    text-align: center;
  }
 
+ .footer {
+   background-color: #d0c6ac;
+   color: #515151;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'patua_oneregular';
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   position: static;
+}
+
 
  @media (max-width: 767px) {
    table{
