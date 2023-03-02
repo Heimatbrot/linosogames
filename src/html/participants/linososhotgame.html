@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" type="text/css" href="linososhotgame.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" href="../../img/linosogames_squared.png"/>
+    <link rel="manifest" href="../../other/manifest.json" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f1ede3" />
+    <meta name="theme-color" content="#f1ede3"/>
+    <title>Linoso Games</title>
+</head>
+<body>
+    <header>
+        <div class="hamburger">
+            <a href="../../../index.html" class="active" style="font-weight: bold;">LINOSO GAMES</a>
+            <hr>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="../../../index.html">Linoso Games</a>
+                <a href="../winners.html">Die Gewinner</a>
+                <a href="../tips.html">Tipps und Tricks</a>
+                <a href="../rules.html">Regeln</a>
+                <a href="../faq.html">FAQ</a>
+                <a href="../participants.html">Participants only</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="hidenav">
+            <h1><a href="../../../index.html">LINOSO GAMES</a></h1>
+            <hr>
+        </div>     
+        <nav>
+            <a href="../../../index.html">Linoso Games</a>
+            <a href="../winners.html">Die Gewinner</a>
+            <a href="../tips.html">Tipps und Tricks</a>
+            <a href="../rules.html">Regeln</a>
+            <a href="../faq.html">FAQ</a>
+            <a href="../participants.html">Participants only</a>
+        </nav>
+        <hr id="pconly">
+    </header>
+
+
+      <div class="content">
+      <section>
+
+        <div class="div">
+            <h1>Linoso Shotgame</h1>
+            <form>
+              <label for="name-input">Name:</label></br>
+              <input type="text" id="name-input"></br>
+              <button type="button" id="add-button">Hinzufügen</button></br>
+            </form>
+            <ul id="name-list"></ul>
+            <button type="button" id="roll-button">take a shot!</button></br>
+            <div id="result" class="div"></div>
+        </div>
+        
+
+      </section>
+      </div>
+</body>
+    <footer>
+        <ul class="no-bullets">
+            <li><h2>LINOSO GAMES</h2></li>
+            <li><h5>JÄHRLICHE VERANSTALTUNG MIT KINDERGEBURTSTAGSSPIELEN, ZIEL IST HALLENSTADION-AUSTRAGUNG MIT SPONSOREN UND LIVE-ÜBERTRAGUNG IM FERNSEHER.</h5></li>
+            <li><h6>©​2022 | Linoso Games | <a href="../impressum.html">Impressum</a></h6></li>
+        </ul>
+    </footer>
+    <script src="linososhotgame.js"></script>
+</html>
