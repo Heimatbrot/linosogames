@@ -29,9 +29,35 @@
     border-color: #d0c6ac
  }
 
+ button {
+   background-color: #d0c6ac;
+   border-radius: 5px;
+   color: #444;
+   font-weight: bold;
+   width: 20rem;
+   height: 5rem;
+   font-size: xx-large;
+   border-style: solid 1px;
+   border-color: #444;
+ }
+ 
+ button:hover {
+   background-color: #f1ede3;
+   border-style: solid 1px;
+   border-color: #444;
+ } 
+h2 {
+   text-align: left;
+}
+
+ .spielelinks{
+   text-align: center;
+ }
+
 
  @media (max-width: 767px) {
    table{
       font-size: small;
    }
    }
+
