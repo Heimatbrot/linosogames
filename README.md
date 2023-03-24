@@ -24,6 +24,5 @@ Just push it to your GitHub branch (in my example, the main branch is the websit
 This project is licensed under the GNU GLPv3 License - see the LICENSE file for details.
 
 ## Acknowledgments
-Thanks to create-react-app for providing a solid foundation for this project.
-Thanks to the React community for all the helpful resources and tutorials!
+Thanks to the Stackoverflow community for the usefull information.
 Thanks to ChatGPT to help me out if i was stuck.
