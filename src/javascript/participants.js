@@ -110,7 +110,7 @@ function searchTable() {
   }
 }
 
-var participants = [['Linus', 2, 0, 1, 1], ['Sean', 2, 0, 0, 1], ['Lara', 2, 1, 1, 0], ['Nicole', 2, 1, 0, 1], ['Simon', 2, 1, 1, 0], ['Caroline', 2, 0, 2, 0], ['Valerio', 2, 0, 0, 1], ['Marc', 2, 1, 0, 1], ['Sofia', 2, 1, 0, 0], ['Jana', 2, 0, 0, 1],['Gian', 0, 0, 0, 0],['Livio', 2, 1, 0, 0],['Andri', 1, 0, 1, 0]];
+var participants = [['Linus', 3, 0, 2, 1], ['Sean', 3, 0, 0, 2], ['Lara', 3, 1, 1, 0], ['Nicole', 3, 1, 1, 1], ['Simon', 3, 1, 1, 0], ['Caroline', 3, 0, 2, 1], ['Valerio', 3, 1, 0, 1], ['Marc', 3, 1, 1, 1], ['Sofia', 3, 2, 0, 0], ['Jana', 3, 0, 0, 1],['Gian', 0, 0, 0, 0],['Livio', 2, 1, 0, 0],['Andri', 2, 1, 1, 0]];
 
 
 
