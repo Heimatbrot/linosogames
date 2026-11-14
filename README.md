@@ -1,14 +1,23 @@
-# Linosogames Homepage
+# Linoso Games
 
-A minimal, responsive React homepage scaffold powered by Vite.
+Responsive React website and installable home screen app for Linoso Games.
 
-The site is published at <https://heimatbrot.github.io/linosogames/>. Every push to `main` builds the app and deploys it to GitHub Pages through GitHub Actions.
-
-## Getting started
+## Develop
 
 ```sh
 npm install
 npm run dev
 ```
 
-Create a production build with `npm run build`.
+## Build
+
+```sh
+npm run build
+npm run preview
+```
+
+The GitHub Pages deployment runs automatically when changes are pushed to `main`.
+The published site is at <https://heimatbrot.github.io/linosogames/>.
+
+On iPhone or iPad, open the site in Safari, tap **Share**, then **Add to Home Screen**.
+The standalone app uses a compact bottom navigation and respects the device safe areas.
