@@ -227,7 +227,7 @@ img { max-width: 100%; }
   .hero-photo { background-image: linear-gradient(90deg, rgba(28,26,23,.61), rgba(34,29,25,.05) 100%), var(--hero-photo); }
   .hero-photo-inner, .trophy-hero > div { width: calc(100% - 40px); padding-block: 78px; }
   .hero-photo h1 { font-size: clamp(4.4rem, 19vw, 7.1rem); }
-  .trophy-hero h1 { font-size: clamp(3.8rem, 15vw, 5.5rem); }
+  .trophy-hero h1 { font-size: clamp(3rem, 13vw, 5rem); }
   .hero-subtitle { max-width: 250px; font-size: 1rem; line-height: 1.5; }
   .hero-index { right: 20px; bottom: 19px; }
   .photo-credit { left: 20px; bottom: 19px; }
