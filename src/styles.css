@@ -28,9 +28,9 @@ img { max-width: 100%; }
 .skip-link:focus { transform: translateY(0); }
 
 .site-header { position: relative; z-index: 10; width: min(100% - 64px, var(--max-width)); min-height: 86px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 26px; border-bottom: 1px solid var(--line); }
-.brand { min-width: 210px; display: inline-flex; align-items: center; gap: 11px; }
-.brand-mark { display: block; flex: 0 0 76px; width: 76px; height: 76px; object-fit: contain; }
-.brand-name { display: flex; flex-direction: column; gap: 2px; font-size: .95rem; font-weight: 800; letter-spacing: .02em; line-height: 1; text-transform: uppercase; }
+.brand { min-width: 100px; display: inline-flex; align-items: center; gap: 11px; }
+.brand-mark { display: block; flex: 0 0 100px; width: 100px; height: 72px; object-fit: contain; }
+.brand-name { display: none; }
 .brand-name span { color: var(--muted); font-size: .6rem; font-weight: 600; letter-spacing: .16em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(17px, 2.4vw, 34px); }
 .desktop-nav a { position: relative; padding-block: 9px; color: #68645d; font-size: .79rem; font-weight: 650; letter-spacing: .045em; transition: color .18s ease; }
@@ -196,7 +196,7 @@ img { max-width: 100%; }
 
 .site-footer { min-height: 220px; padding: 38px max(32px, calc((100% - var(--max-width)) / 2)); display: grid; grid-template-columns: 1fr 1fr; align-content: center; gap: 15px 28px; border-top: 1px solid var(--line); background: #efebe2; }
 .footer-brand { display: flex; align-items: center; gap: 12px; font-size: .71rem; font-weight: 850; letter-spacing: .13em; }
-.footer-brand img { width: 60px; height: 60px; object-fit: contain; }
+.footer-brand img { width: 76px; height: 54px; object-fit: contain; }
 .site-footer > p { justify-self: end; margin: 0; color: var(--muted); font-family: Georgia, serif; font-size: .94rem; }
 .site-footer nav { display: flex; gap: 18px; color: #615d56; font-size: .74rem; }
 .site-footer nav a:hover { color: var(--red); }
@@ -214,8 +214,8 @@ img { max-width: 100%; }
 
 @media (max-width: 960px) {
   .site-header { width: min(100% - 44px, var(--max-width)); }
-  .brand { min-width: 175px; }
-  .brand-mark { flex-basis: 70px; width: 70px; height: 70px; }
+  .brand { min-width: 100px; }
+  .brand-mark { flex-basis: 92px; width: 92px; height: 66px; }
   .desktop-nav { gap: 15px; }
   .desktop-nav a { font-size: .72rem; }
   .install-link span:last-child { display: none; }
@@ -227,10 +227,9 @@ img { max-width: 100%; }
 }
 
 @media (max-width: 760px) {
-  .site-header { width: 100%; min-height: 72px; padding-inline: 20px; }
+  .site-header { width: 100%; min-height: 80px; padding-inline: 20px; }
   .brand { min-width: 0; gap: 8px; }
-  .brand-mark { flex-basis: 66px; width: 66px; height: 66px; }
-  .brand-name { font-size: .82rem; }
+  .brand-mark { flex-basis: 88px; width: 88px; height: 63px; }
   .install-link { gap: 0; padding: 8px; }
   .install-link span:last-child { display: inline; font-size: 0; }
   .install-link span:last-child::after { content: "App"; font-size: .7rem; }
@@ -307,7 +306,7 @@ img { max-width: 100%; }
 @media (display-mode: standalone) {
   .app-shell.is-standalone { min-height: 100dvh; padding-top: env(safe-area-inset-top); }
   .is-standalone .site-header { position: sticky; top: 0; min-height: 65px; width: 100%; padding-inline: 18px; background: rgba(246,243,236,.97); backdrop-filter: blur(16px); }
-  .is-standalone .brand-mark { flex-basis: 70px; width: 70px; height: 70px; }
+  .is-standalone .brand-mark { flex-basis: 92px; width: 92px; height: 66px; }
   .is-standalone .install-link, .is-standalone .desktop-nav, .is-standalone .compact-nav { display: none; }
   .is-standalone .main-content { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
   .is-standalone .site-footer { padding-bottom: calc(130px + env(safe-area-inset-bottom)); }
