@@ -27,7 +27,7 @@ function Header({ route, standalone, onInstall }) {
       <header className="site-header">
         <a className="brand" href="#/home" aria-label="Linosogames – Startseite">
           <img className="brand-mark" src={brandLogo} alt="" />
-          <span className="brand-name">Linosogames<span>seit 2022</span></span>
+          <span className="brand-name">LINOSO GAMES<span>seit 2022</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Hauptnavigation">
           {navigation.map((item) => <a key={item.id} className={route === item.id ? 'active' : ''} href={`#/${item.id}`}>{item.label}</a>)}
@@ -65,7 +65,7 @@ function HomePage() {
           <p className="hero-kicker"><span /> Seit 2022 · Zürich</p>
           <div className="home-hero-title-row">
             <h1>Die Linoso<br /><em>Games</em></h1>
-            <img className="home-hero-logo" src={animatedLogo} alt="Animiertes Linosogames-Logo" />
+            <span className="home-hero-sticker"><img className="home-hero-logo" src={animatedLogo} alt="Animiertes Linosogames-Logo" /></span>
           </div>
           <p className="hero-subtitle">Geburtstag. Spiele. Goldene Giesskanne.</p>
           <a className="button button-light" href="#/rules">So wird gespielt <Icon name="arrow" size={18} /></a>
