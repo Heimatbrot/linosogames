@@ -257,8 +257,8 @@ img { max-width: 100%; }
   .photo-credit { left: 20px; bottom: 19px; }
   .content-width { width: calc(100% - 40px); }
   .intro-section { grid-template-columns: 1fr; gap: 24px; padding-block: 69px; }
-  .intro-aside { flex-direction: row; align-items: center; justify-content: space-between; }
-  .home-logo-gif { width: clamp(96px, 28vw, 132px); }
+  .intro-aside { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .home-logo-gif { width: min(190px, 48vw); }
   .intro-copy h2 { font-size: clamp(2.8rem, 12vw, 4.2rem); }
   .intro-copy > p { font-size: .93rem; }
   .games-layout { grid-template-columns: 1fr; gap: 38px; }
