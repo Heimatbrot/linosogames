@@ -48,7 +48,7 @@ img { max-width: 100%; }
 .hero-photo { background-image: linear-gradient(90deg, rgba(28, 26, 23, .68), rgba(34, 29, 25, .18) 75%), var(--hero-photo); }
 .hero-photo-inner { width: min(100% - 64px, 1100px); margin: 0 auto; padding-block: 60px; }
 .home-hero-title-row { display: flex; align-items: center; gap: clamp(24px, 5vw, 70px); }
-.home-hero-logo { display: block; flex: 0 0 auto; width: clamp(180px, 20vw, 240px); height: auto; padding: 12px; border: 1px solid rgba(255,255,255,.9); border-radius: 50%; background: rgba(246,243,236,.94); box-shadow: 0 14px 30px rgba(22,18,14,.27); }
+.home-hero-logo { display: block; flex: 0 0 auto; width: clamp(180px, 20vw, 240px); height: auto; padding: 12px; border: 1px solid rgba(255,255,255,.95); border-radius: 47% 53% 49% 51% / 51% 45% 55% 49%; background: #fffdf8; box-shadow: 0 0 0 5px #fffdf8, 0 1px 0 6px rgba(62,47,27,.22), 0 14px 28px rgba(22,18,14,.32); transform: rotate(4deg); }
 .hero-kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 20px; color: rgba(255,255,255,.87); font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .hero-kicker > span { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 5px rgba(233,189,91,.18); }
 .hero-photo h1, .trophy-hero h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(4rem, 9.5vw, 8.4rem); font-weight: 700; letter-spacing: -.07em; line-height: .78; text-transform: uppercase; }
@@ -249,8 +249,8 @@ img { max-width: 100%; }
   .hero-photo-inner, .trophy-hero > div { width: calc(100% - 40px); padding-block: 44px; }
   .hero-kicker { margin-bottom: 16px; }
   .hero-photo h1, .trophy-hero h1 { font-size: clamp(3rem, 14.5vw, 4.5rem); }
-  .home-hero-title-row { gap: 8px; }
-  .hero-photo h1 { flex: 0 1 auto; font-size: clamp(2rem, 10vw, 3.4rem); }
+  .home-hero-title-row { gap: 6px; }
+  .hero-photo h1 { flex: 0 1 auto; font-size: clamp(1.85rem, 9vw, 3rem); }
   .home-hero-logo { width: clamp(76px, 25vw, 100px); padding: 5px; }
   .participant-stats { margin-top: 60px; padding-top: 34px; }
   .participant-stats-heading { align-items: stretch; flex-direction: column; gap: 18px; }
