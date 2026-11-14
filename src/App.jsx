@@ -164,7 +164,7 @@ function FAQPage() {
 }
 
 function CreditsPage() {
-  return <section className="content-width interior-page simple-page"><PageHeading eyebrow="BILDMATERIAL" title="Credits" description="Alle Quellangaben für die verwendeten Bilder." /><div className="credit-list"><a href="https://www.freepik.com/free-photo/front-view-kids-playing-with-potato-bags_5103816.htm" target="_blank" rel="noreferrer"><span>01</span><strong>Kinder beim Sackhüpfen</strong><small>Freepik · Startseite</small><Icon name="arrow" /></a><a href="https://www.freepik.com/fotos-kostenlos/nahaufnahme-des-goldenen-glitzers_11291752.htm" target="_blank" rel="noreferrer"><span>02</span><strong>Goldener Pokal-Hintergrund</strong><small>Freepik · Gewinnerseite</small><Icon name="arrow" /></a><div className="credit-local"><span>03</span><strong>Linoso Games Logo</strong><small>Eigene Grafik · seit 2022</small></div></div></section>;
+  return <section className="content-width interior-page simple-page"><PageHeading eyebrow="BILDMATERIAL" title="Credits" description="Alle Quellangaben für die verwendeten Bilder." /><div className="credit-list"><a href="https://www.freepik.com/free-photo/front-view-kids-playing-with-potato-bags_5103816.htm" target="_blank" rel="noreferrer"><span>01</span><strong>Kinder beim Sackhüpfen</strong><small>Freepik · Startseite</small><Icon name="arrow" /></a><a href="https://www.freepik.com/free-photo/close-up-golden-glitter_11291752.htm" target="_blank" rel="noreferrer"><span>02</span><strong>Goldener Pokal-Hintergrund</strong><small>Freepik · Gewinnerseite</small><Icon name="arrow" /></a><div className="credit-local"><span>03</span><strong>Linoso Games Logo</strong><small>Eigene Grafik · seit 2022</small></div></div></section>;
 }
 
 function ImprintPage() {
