@@ -221,7 +221,9 @@ img { max-width: 100%; }
   .compact-nav a { min-height: 47px; display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 0 10px; color: #77736a; font-size: .71rem; font-weight: 700; white-space: nowrap; }
   .compact-nav a.active { color: var(--red); }
   .compact-nav a.active::after { align-self: end; width: 0; height: 0; }
-  .hero-photo, .trophy-hero { min-height: min(670px, 76svh); background-position: 55% center; }
+  .hero-photo, .trophy-hero { min-height: min(670px, 76svh); }
+  .hero-photo { background-position: 55% center; }
+  .trophy-hero { background-position: 84% center; }
   .hero-photo { background-image: linear-gradient(90deg, rgba(28,26,23,.61), rgba(34,29,25,.05) 100%), var(--hero-photo); }
   .hero-photo-inner, .trophy-hero > div { width: calc(100% - 40px); padding-block: 78px; }
   .hero-photo h1 { font-size: clamp(4.4rem, 19vw, 7.1rem); }

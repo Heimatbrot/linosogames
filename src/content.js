@@ -32,10 +32,10 @@ export const rules = [
   {
     title: 'Artikel 1 · Teams',
     paragraphs: [
-      '1.1 Die Teams werden zufällig ausgelost.',
-      '1.2.1 Die zwölf Teilnehmenden werden in sechs Zweierteams oder vier Dreierteams aufgeteilt (im Ermessen des Orga-Teams).',
-      '1.2.2 Das Siegerteam der letzten Ausgabe tritt, sofern möglich, unverändert als Titelverteidiger an.',
-      '1.3 Ist ein Teilnehmer verhindert, entscheidet das Orga-Team über die neue Aufteilung. Die Auslosung wird wiederholt.',
+      '1.1 Die Teams werden zufällig gelost.',
+      '1.2.1 Die Teilnehmenden werden in Zwei- bis Viererteams aufgeteilt (im Ermessen des Orga-Teams).',
+      '1.2.2 Lediglich das Siegerteam der letzten Ausgabe muss, sofern möglich, unverändert als Titelverteidiger antreten.',
+      '1.3 Ist ein Teilnehmer verhindert, entscheidet das Orga-Team über die neue Aufteilung.',
     ],
   },
   {
@@ -45,16 +45,15 @@ export const rules = [
       '2.2 Vier dieser Spiele werden je zweimal gespielt.',
       '2.3 Vier dieser Spiele werden je einmal gespielt.',
       '2.4 Insgesamt werden zwölf Runden gespielt.',
-      '2.5 Nach dem sechsten Spiel gibt es eine Pause. Das Orga-Team legt die Dauer fest und kündigt die Wiederaufnahme mindestens fünf Minuten vorher an.',
+      '2.5 Nach dem sechsten Spiel findet eine Spielpause statt. Das Orga-Team entscheidet, wie lange sie dauert, und kündigt die Wiederaufnahme mindestens fünf Minuten vorher an.',
     ],
   },
   {
     title: 'Artikel 3 · Punkte',
     paragraphs: [
-      '3.1 Pro Team können maximal 16 Punkte erreicht werden.',
-      '3.2 Die Spiele aus 2.2 geben dem Siegerteam je einen Punkt; das Verliererteam erhält null Punkte.',
-      '3.3 Die Spiele aus 2.3 geben dem Siegerteam je zwei Punkte; das Verliererteam erhält null Punkte.',
-      '3.4 Bei Gleichstand am Ende eines Spiels wird dieses mit Schere, Stein, Papier auf drei entschieden.',
+      '3.1 Pro Team können maximal zwölf Punkte erreicht werden.',
+      '3.2 Jedes Spiel wird mit einem Punkt für das Siegerteam und null Punkten für das Verliererteam bewertet.',
+      '3.3 Bei Gleichstand am Ende eines Spiels legt das Orga-Team eine Lösung fest.',
     ],
   },
   {
@@ -62,9 +61,10 @@ export const rules = [
     paragraphs: [
       '4.1 Sieger ist das Team mit den meisten Punkten am Ende der Spiele.',
       '4.2 Die Siegerehrung wird vom Orga-Team abgehalten.',
-      '4.3 Bei Punktegleichheit entscheidet Schere, Stein, Papier auf drei.',
-      '4.4.1 Das Siegerteam kümmert sich ein Jahr lang – bis zu den nächsten Spielen – um die goldene Gießkanne und verewigt sich während oder nach der Siegerehrung darauf.',
-      '4.4.2 Die Namen stehen in normaler Schriftgröße neben dem Jahresdatum.',
+      '4.3 Bei Punktegleichheit wird mithilfe des einzig wahren Spiels ein Sieger ermittelt. Die Teams wählen gemeinsam ein Entscheidungsspiel.',
+      '4.4.1 Das Siegerteam darf sich ein Jahr lang – bis zur Austragung der nächsten Spiele – um die glamouröse goldene Giesskanne kümmern und sich während oder nach der Siegerehrung mit den Namen der Teammitglieder darauf verewigen.',
+      '4.4.2 Die Namen müssen in normaler Schriftgrösse und neben dem Jahresdatum stehen.',
+      '4.5 Das Siegerteam darf für die nächste Ausgabe ein Wunschspiel anmelden. Das Orga-Team entscheidet, ob und wie dieses durchgeführt wird.',
     ],
   },
   {
@@ -72,23 +72,25 @@ export const rules = [
     paragraphs: [
       '5.1 Ehre ist eine Sache der Ehre.',
       '5.2 Unlauteres Verhalten wird bestraft.',
-      '5.3 Gegner mit verbalen Äußerungen zu demoralisieren ist erwünscht.',
-      '5.4 Wer eigene Linoso Games veranstalten möchte, stellt einen Antrag über das Kontaktformular. Eine genehmigte Veranstaltung erhält die vorbereiteten Zeitpläne für beide Spielmodi.',
-      '5.5 Mit Beginn des ersten Spiels gilt das Regelbuch als gelesen und akzeptiert. Es gibt kein nachträgliches Einspruchsrecht.',
+      '5.3 Den Gegner mithilfe verbaler Äusserungen zu demoralisieren, ist erwünscht.',
+      { text: '5.4 Wer eigene Linoso Games veranstalten möchte, muss einen Antrag über das ', link: 'Kontaktformular', href: '#/faq', suffix: ' stellen. Bei Nichteinhaltung dieser Bedingungen werden Schadensersatzforderungen von 1’000’000 CHF gegen den Schädiger geltend gemacht.' },
+      '5.5 Mit Beginn des ersten Spiels gilt das Regelbuch als gelesen und akzeptiert. Ein nachträgliches Einspruchsrecht besteht nicht.',
+      '5.6 Jeder Teilnehmer darf während der Spiele einen Shot verteilen. Dieser darf nicht abgelehnt werden; andernfalls greift zusätzlich zum Shot Artikel 5.2.',
     ],
   },
   {
-    title: 'Artikel 6 · Haftung',
+    title: 'Artikel 6 · Haftungsausschlüsse',
     paragraphs: [
-      '6.1 Die Teilnahme an den Spielen geschieht auf eigene Gefahr.',
-      '6.2 Alle Teilnehmenden sind selbst für eine ausreichende Absicherung verantwortlich.',
+      '6.1 Jegliche Haftung wird abgelehnt.',
+      '6.2 Die Teilnahme an den Spielen geschieht auf eigene Gefahr.',
+      '6.3 Mit der Teilnahme wird akzeptiert, dass das Orga-Team nicht für allfällige Schäden haftbar gemacht werden kann. Wie in Artikeln 6.1 und 6.2 festgehalten, muss jeder Teilnehmer selbst für eine Absicherung aufkommen.',
     ],
   },
   {
     title: 'Artikel 69 · Orga',
     paragraphs: [
       '69.1 Das Orga-Team besteht aus vier Personen.',
-      '69.2 In Streitfällen berät sich das Orga-Team und entscheidet demokratisch.',
+      '69.2 In Streitfällen berät sich das Orga-Team. Der Entscheid wird demokratisch gefällt und ist rechtsgültig.',
       '69.3 Das Orga-Team handelt nicht zwingend im Willen der Allgemeinheit.',
       '69.4 Das Orga-Team entscheidet über Form und Härte der jeweiligen Strafen.',
     ],

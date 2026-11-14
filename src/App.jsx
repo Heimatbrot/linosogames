@@ -127,7 +127,7 @@ function TipsPage() {
 function RulesPage() {
   return <section className="content-width interior-page rules-page"><PageHeading eyebrow="DAS KLEINGEDRUCKTE" title="Die Gebote" description="Das Regelwerk der Linoso Games. Lies es einmal durch – danach zählen Teamgeist, Fairness und die Entscheidung des Orga-Teams." />
     <div className="rules-intro"><span>✳</span><p>Das Orga hat immer Recht.</p></div>
-    <div className="rule-list">{rules.map((rule, i) => <article className="rule-card" key={rule.title}><span className="rule-index">{String(i + 1).padStart(2, '0')}</span><div><h2>{rule.title}</h2><ul>{rule.paragraphs.map((paragraph) => <li key={paragraph}>{paragraph}</li>)}</ul></div></article>)}</div>
+    <div className="rule-list">{rules.map((rule, i) => <article className="rule-card" key={rule.title}><span className="rule-index">{String(i + 1).padStart(2, '0')}</span><div><h2>{rule.title}</h2><ul>{rule.paragraphs.map((paragraph, paragraphIndex) => <li key={`${rule.title}-${paragraphIndex}`}>{typeof paragraph === 'string' ? paragraph : <>{paragraph.text}<a href={paragraph.href}>{paragraph.link}</a>{paragraph.suffix}</>}</li>)}</ul></div></article>)}</div>
   </section>;
 }
 
