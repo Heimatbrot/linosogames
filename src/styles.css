@@ -252,7 +252,7 @@ img { max-width: 100%; }
   .hero-photo-inner, .trophy-hero > div { width: calc(100% - 40px); padding-block: 44px; }
   .hero-kicker { margin-bottom: 16px; }
   .hero-photo h1, .trophy-hero h1 { font-size: clamp(3rem, 14.5vw, 4.5rem); }
-  .home-hero-title-row { gap: clamp(13px, 4vw, 20px); }
+  .home-hero-title-row { gap: clamp(18px, 5.5vw, 26px); }
   .hero-photo h1 { flex: 0 1 auto; font-size: clamp(1.85rem, 9vw, 3rem); }
   .home-hero-sticker { width: clamp(88px, 26vw, 104px); border-width: 4px; }
   .home-hero-logo { width: 125%; }
