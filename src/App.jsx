@@ -65,12 +65,13 @@ function HomePage() {
           <p className="hero-kicker"><span /> Seit 2022 · Zürich</p>
           <div className="home-hero-title-row">
             <h1>Die Linoso<br /><em>Games</em></h1>
+            <svg className="sticker-filter-defs" aria-hidden="true"><defs><filter id="sticker-cutout" x="-25%" y="-25%" width="150%" height="150%" colorInterpolationFilters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="5" result="dilated" /><feGaussianBlur in="dilated" stdDeviation="3" result="blurred" /><feOffset in="blurred" dx="0" dy="6" result="offsetShadow" /><feFlood floodColor="#21190f" floodOpacity=".32" result="shadowColor" /><feComposite in="shadowColor" in2="offsetShadow" operator="in" result="shadow" /><feFlood floodColor="#fff" result="outlineColor" /><feComposite in="outlineColor" in2="dilated" operator="in" result="outline" /><feMerge><feMergeNode in="shadow" /><feMergeNode in="outline" /><feMergeNode in="SourceGraphic" /></feMerge></filter></defs></svg>
             <span className="home-hero-sticker"><img className="home-hero-logo" src={animatedLogo} alt="Animiertes Linosogames-Logo" /></span>
           </div>
           <p className="hero-subtitle">Geburtstag. Spiele. Goldene Giesskanne.</p>
           <a className="button button-light" href="#/rules">So wird gespielt <Icon name="arrow" size={18} /></a>
         </div>
-        <span className="hero-index">01 / 07</span>
+        <span className="hero-index">SOURCE 01</span>
         <span className="photo-credit">Bild: <a href="https://www.freepik.com/free-photo/front-view-kids-playing-with-potato-bags_5103816.htm" target="_blank" rel="noreferrer">Freepik</a></span>
       </section>
 
@@ -119,7 +120,7 @@ function WinnersPage() {
     .filter((participant) => participant.name.toLocaleLowerCase('de-CH').includes(query.trim().toLocaleLowerCase('de-CH')));
 
   return <>
-    <section className="trophy-hero" style={{ '--trophy-photo': `url(${trophyPhoto})` }}><div><p className="hero-kicker"><span /> DIE HALL OF FAME</p><h1>Die<br /><em>Gewinner</em></h1><p>Eine Giesskanne. Viele Geschichten.</p></div><span className="hero-index">02 / 07</span><span className="photo-credit">Pokal-Hintergrund: <a href="https://www.freepik.com/free-photo/close-up-golden-glitter_11291752.htm" target="_blank" rel="noreferrer">Freepik</a></span></section>
+    <section className="trophy-hero" style={{ '--trophy-photo': `url(${trophyPhoto})` }}><div><p className="hero-kicker"><span /> DIE HALL OF FAME</p><h1>Die<br /><em>Gewinner</em></h1><p>Eine Giesskanne. Viele Geschichten.</p></div><span className="hero-index">SOURCE 02</span><span className="photo-credit">Pokal-Hintergrund: <a href="https://www.freepik.com/free-photo/close-up-golden-glitter_11291752.htm" target="_blank" rel="noreferrer">Freepik</a></span></section>
     <section className="winners content-width"><PageHeading eyebrow="DIE SIEGERTEAMS" title="Jahr für Jahr." description="Wer die Linoso Games gewinnt, darf die goldene Giesskanne bis zur nächsten Ausgabe hüten." />
       <ol className="winner-list">{winners.map((winner) => <li className={winner.featured ? 'winner-featured' : ''} key={winner.year}><span className="winner-year">{winner.year}</span><p>{winner.names}</p><span className="winner-mark" aria-hidden="true">{winner.featured ? '✳' : '↗'}</span></li>)}</ol>
       <div className="winner-note"><span>✳</span><p>Das Siegerteam verewigt seine Namen auf der goldenen Giesskanne – bis die nächste Ausgabe einen neuen Champion kürt.</p></div>
