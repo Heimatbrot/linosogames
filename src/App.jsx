@@ -63,7 +63,10 @@ function HomePage() {
       <section className="hero-photo" style={{ '--hero-photo': `url(${heroPhoto})` }}>
         <div className="hero-photo-inner">
           <p className="hero-kicker"><span /> Seit 2022 · Zürich</p>
-          <h1>Die Linoso<br /><em>Games</em></h1>
+          <div className="home-hero-title-row">
+            <h1>Die Linoso<br /><em>Games</em></h1>
+            <img className="home-hero-logo" src={animatedLogo} alt="Animiertes Linosogames-Logo" />
+          </div>
           <p className="hero-subtitle">Geburtstag. Spiele. Goldene Giesskanne.</p>
           <a className="button button-light" href="#/rules">So wird gespielt <Icon name="arrow" size={18} /></a>
         </div>
@@ -72,10 +75,7 @@ function HomePage() {
       </section>
 
       <section className="intro-section content-width">
-        <div className="intro-aside">
-          <div className="section-label"><span>01</span> DIE ERSTEN SPIELE</div>
-          <img className="home-logo-gif" src={animatedLogo} alt="Animiertes Linosogames-Logo" />
-        </div>
+        <div className="section-label"><span>01</span> DIE ERSTEN SPIELE</div>
         <div className="intro-copy">
           <h2>Ein Geburtstag.<br /><span>Ein bisschen anders.</span></h2>
           <p>Die Linoso Games sind eine Reihe von Spielen rund um Geburtstage und andere Feiern. Die erste Ausgabe fand im Oktober 2022 statt. Erwachsene messen sich in Kindheitsspielen, feiern, lachen und kämpfen um den Wanderpokal: eine goldene Giesskanne.</p>

@@ -47,9 +47,12 @@ img { max-width: 100%; }
 .hero-photo, .trophy-hero { position: relative; min-height: clamp(300px, 32vw, 430px); display: flex; align-items: center; color: white; background-color: #553d32; background-position: center 42%; background-size: cover; }
 .hero-photo { background-image: linear-gradient(90deg, rgba(28, 26, 23, .68), rgba(34, 29, 25, .18) 75%), var(--hero-photo); }
 .hero-photo-inner { width: min(100% - 64px, 1100px); margin: 0 auto; padding-block: 60px; }
+.home-hero-title-row { display: flex; align-items: center; gap: clamp(24px, 5vw, 70px); }
+.home-hero-logo { display: block; flex: 0 0 auto; width: clamp(180px, 20vw, 240px); height: auto; filter: drop-shadow(0 12px 20px rgba(22, 18, 14, .23)); }
 .hero-kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 20px; color: rgba(255,255,255,.87); font-size: .68rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .hero-kicker > span { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 5px rgba(233,189,91,.18); }
 .hero-photo h1, .trophy-hero h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(4rem, 9.5vw, 8.4rem); font-weight: 700; letter-spacing: -.07em; line-height: .78; text-transform: uppercase; }
+.hero-photo h1 { flex: 0 1 auto; font-size: clamp(3.5rem, 8vw, 7rem); }
 .hero-photo h1 em, .trophy-hero h1 em { color: #f2cf78; font-style: normal; }
 .hero-subtitle { margin: 24px 0 22px; color: rgba(255,255,255,.9); font-size: clamp(1rem, 2vw, 1.3rem); letter-spacing: .015em; }
 .button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 18px; padding: 0 20px; border: 0; border-radius: 4px; cursor: pointer; font-size: .83rem; font-weight: 750; letter-spacing: .015em; transition: transform .18s ease, background-color .18s ease, color .18s ease; }
@@ -246,6 +249,9 @@ img { max-width: 100%; }
   .hero-photo-inner, .trophy-hero > div { width: calc(100% - 40px); padding-block: 44px; }
   .hero-kicker { margin-bottom: 16px; }
   .hero-photo h1, .trophy-hero h1 { font-size: clamp(3rem, 14.5vw, 4.5rem); }
+  .home-hero-title-row { gap: 8px; }
+  .hero-photo h1 { flex: 0 1 auto; font-size: clamp(2rem, 10vw, 3.4rem); }
+  .home-hero-logo { width: clamp(76px, 25vw, 100px); }
   .participant-stats { margin-top: 60px; padding-top: 34px; }
   .participant-stats-heading { align-items: stretch; flex-direction: column; gap: 18px; }
   .participant-search { flex-basis: auto; }
@@ -257,8 +263,6 @@ img { max-width: 100%; }
   .photo-credit { left: 20px; bottom: 19px; }
   .content-width { width: calc(100% - 40px); }
   .intro-section { grid-template-columns: 1fr; gap: 24px; padding-block: 69px; }
-  .intro-aside { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .home-logo-gif { width: min(190px, 48vw); }
   .intro-copy h2 { font-size: clamp(2.8rem, 12vw, 4.2rem); }
   .intro-copy > p { font-size: .93rem; }
   .games-layout { grid-template-columns: 1fr; gap: 38px; }
