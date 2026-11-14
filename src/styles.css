@@ -29,7 +29,7 @@ img { max-width: 100%; }
 
 .site-header { position: relative; z-index: 10; width: min(100% - 64px, var(--max-width)); min-height: 86px; margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 26px; border-bottom: 1px solid var(--line); }
 .brand { min-width: 210px; display: inline-flex; align-items: center; gap: 11px; }
-.brand-mark { display: block; width: 58px; height: 40px; object-fit: contain; }
+.brand-mark { display: block; flex: 0 0 76px; width: 76px; height: 76px; object-fit: contain; }
 .brand-name { display: flex; flex-direction: column; gap: 2px; font-size: .95rem; font-weight: 800; letter-spacing: .02em; line-height: 1; text-transform: uppercase; }
 .brand-name span { color: var(--muted); font-size: .6rem; font-weight: 600; letter-spacing: .16em; }
 .desktop-nav { display: flex; align-items: center; gap: clamp(17px, 2.4vw, 34px); }
@@ -63,6 +63,8 @@ img { max-width: 100%; }
 .photo-credit a { text-decoration: underline; text-underline-offset: 2px; }
 
 .intro-section { display: grid; grid-template-columns: minmax(160px, .62fr) 1fr; gap: clamp(40px, 11vw, 148px); padding-block: clamp(88px, 12vw, 150px); }
+.intro-aside { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.home-logo-gif { display: block; width: clamp(160px, 18vw, 220px); height: auto; }
 .section-label { display: flex; align-items: center; gap: 12px; color: #676259; font-size: .67rem; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
 .section-label > span { color: var(--red); font-family: ui-monospace, monospace; font-size: .74rem; }
 .intro-copy h2, .games-layout h2, .invite-band h2 { margin: 0 0 22px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.4rem, 5.4vw, 4.6rem); font-weight: 500; letter-spacing: -.06em; line-height: .99; }
@@ -194,7 +196,7 @@ img { max-width: 100%; }
 
 .site-footer { min-height: 220px; padding: 38px max(32px, calc((100% - var(--max-width)) / 2)); display: grid; grid-template-columns: 1fr 1fr; align-content: center; gap: 15px 28px; border-top: 1px solid var(--line); background: #efebe2; }
 .footer-brand { display: flex; align-items: center; gap: 12px; font-size: .71rem; font-weight: 850; letter-spacing: .13em; }
-.footer-brand img { width: 44px; height: 31px; object-fit: contain; }
+.footer-brand img { width: 60px; height: 60px; object-fit: contain; }
 .site-footer > p { justify-self: end; margin: 0; color: var(--muted); font-family: Georgia, serif; font-size: .94rem; }
 .site-footer nav { display: flex; gap: 18px; color: #615d56; font-size: .74rem; }
 .site-footer nav a:hover { color: var(--red); }
@@ -213,7 +215,7 @@ img { max-width: 100%; }
 @media (max-width: 960px) {
   .site-header { width: min(100% - 44px, var(--max-width)); }
   .brand { min-width: 175px; }
-  .brand-mark { width: 50px; }
+  .brand-mark { flex-basis: 70px; width: 70px; height: 70px; }
   .desktop-nav { gap: 15px; }
   .desktop-nav a { font-size: .72rem; }
   .install-link span:last-child { display: none; }
@@ -227,7 +229,7 @@ img { max-width: 100%; }
 @media (max-width: 760px) {
   .site-header { width: 100%; min-height: 72px; padding-inline: 20px; }
   .brand { min-width: 0; gap: 8px; }
-  .brand-mark { width: 48px; height: 34px; }
+  .brand-mark { flex-basis: 66px; width: 66px; height: 66px; }
   .brand-name { font-size: .82rem; }
   .install-link { gap: 0; padding: 8px; }
   .install-link span:last-child { display: inline; font-size: 0; }
@@ -256,6 +258,8 @@ img { max-width: 100%; }
   .photo-credit { left: 20px; bottom: 19px; }
   .content-width { width: calc(100% - 40px); }
   .intro-section { grid-template-columns: 1fr; gap: 24px; padding-block: 69px; }
+  .intro-aside { flex-direction: row; align-items: center; justify-content: space-between; }
+  .home-logo-gif { width: clamp(96px, 28vw, 132px); }
   .intro-copy h2 { font-size: clamp(2.8rem, 12vw, 4.2rem); }
   .intro-copy > p { font-size: .93rem; }
   .games-layout { grid-template-columns: 1fr; gap: 38px; }
@@ -303,7 +307,7 @@ img { max-width: 100%; }
 @media (display-mode: standalone) {
   .app-shell.is-standalone { min-height: 100dvh; padding-top: env(safe-area-inset-top); }
   .is-standalone .site-header { position: sticky; top: 0; min-height: 65px; width: 100%; padding-inline: 18px; background: rgba(246,243,236,.97); backdrop-filter: blur(16px); }
-  .is-standalone .brand-mark { width: 43px; height: 32px; }
+  .is-standalone .brand-mark { flex-basis: 70px; width: 70px; height: 70px; }
   .is-standalone .install-link, .is-standalone .desktop-nav, .is-standalone .compact-nav { display: none; }
   .is-standalone .main-content { padding-bottom: calc(104px + env(safe-area-inset-bottom)); }
   .is-standalone .site-footer { padding-bottom: calc(130px + env(safe-area-inset-bottom)); }

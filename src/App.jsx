@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import mark from './assets/linoso-mark.gif';
+import brandLogo from './assets/linosogames-logo.png';
+import animatedLogo from './assets/linoso-mark.gif';
 import heroPhoto from './assets/linoso-hero.jpg';
 import trophyPhoto from './assets/linoso-gold.jpg';
 import { navigation, participantStats, questions, rules, tips, winners } from './content.js';
@@ -25,7 +26,7 @@ function Header({ route, standalone, onInstall }) {
     <>
       <header className="site-header">
         <a className="brand" href="#/home" aria-label="Linosogames – Startseite">
-          <img className="brand-mark" src={mark} alt="" />
+          <img className="brand-mark" src={brandLogo} alt="" />
           <span className="brand-name">Linosogames<span>seit 2022</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Hauptnavigation">
@@ -43,7 +44,7 @@ function Header({ route, standalone, onInstall }) {
 function Footer() {
   return (
     <footer className="site-footer">
-      <div className="footer-brand"><img src={mark} alt="" /><span>LINOSO GAMES</span></div>
+      <div className="footer-brand"><img src={brandLogo} alt="" /><span>LINOSO GAMES</span></div>
       <p>Jährliche Spiele, grosse Gefühle und eine goldene Giesskanne.</p>
       <nav aria-label="Weitere Seiten"><a href="#/credits">Credits</a><a href="#/impressum">Impressum</a><a href="mailto:linosogames@gmail.com">Kontakt</a></nav>
       <small>© 2022–{new Date().getFullYear()} Linoso Games</small>
@@ -71,7 +72,10 @@ function HomePage() {
       </section>
 
       <section className="intro-section content-width">
-        <div className="section-label"><span>01</span> DIE ERSTEN SPIELE</div>
+        <div className="intro-aside">
+          <div className="section-label"><span>01</span> DIE ERSTEN SPIELE</div>
+          <img className="home-logo-gif" src={animatedLogo} alt="Animiertes Linosogames-Logo" />
+        </div>
         <div className="intro-copy">
           <h2>Ein Geburtstag.<br /><span>Ein bisschen anders.</span></h2>
           <p>Die Linoso Games sind eine Reihe von Spielen rund um Geburtstage und andere Feiern. Die erste Ausgabe fand im Oktober 2022 statt. Erwachsene messen sich in Kindheitsspielen, feiern, lachen und kämpfen um den Wanderpokal: eine goldene Giesskanne.</p>
