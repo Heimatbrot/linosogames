@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import mark from './assets/linoso-mark.gif';
 import heroPhoto from './assets/linoso-hero.jpg';
 import trophyPhoto from './assets/linoso-gold.jpg';
-import { navigation, questions, rules, tips, winners } from './content.js';
+import { navigation, participantStats, questions, rules, tips, winners } from './content.js';
 
 const pages = ['home', 'winners', 'tips', 'rules', 'faq', 'credits', 'impressum'];
 const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
@@ -24,9 +24,9 @@ function Header({ route, standalone, onInstall }) {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="#/home" aria-label="Linoso Games – Startseite">
+        <a className="brand" href="#/home" aria-label="Linosogames – Startseite">
           <img className="brand-mark" src={mark} alt="" />
-          <span className="brand-name">Linoso Games<span>seit 2022</span></span>
+          <span className="brand-name">Linosogames<span>seit 2022</span></span>
         </a>
         <nav className="desktop-nav" aria-label="Hauptnavigation">
           {navigation.map((item) => <a key={item.id} className={route === item.id ? 'active' : ''} href={`#/${item.id}`}>{item.label}</a>)}
@@ -109,11 +109,26 @@ function HomePage() {
 }
 
 function WinnersPage() {
+  const [query, setQuery] = useState('');
+  const leaderboard = [...participantStats]
+    .sort((a, b) => b.first - a.first || b.second - a.second || b.third - a.third || a.name.localeCompare(b.name, 'de-CH'))
+    .filter((participant) => participant.name.toLocaleLowerCase('de-CH').includes(query.trim().toLocaleLowerCase('de-CH')));
+
   return <>
     <section className="trophy-hero" style={{ '--trophy-photo': `url(${trophyPhoto})` }}><div><p className="hero-kicker"><span /> DIE HALL OF FAME</p><h1>Die<br /><em>Gewinner</em></h1><p>Eine Giesskanne. Viele Geschichten.</p></div><span className="hero-index">02 / 07</span><span className="photo-credit">Pokal-Hintergrund: <a href="https://www.freepik.com/free-photo/close-up-golden-glitter_11291752.htm" target="_blank" rel="noreferrer">Freepik</a></span></section>
     <section className="winners content-width"><PageHeading eyebrow="DIE SIEGERTEAMS" title="Jahr für Jahr." description="Wer die Linoso Games gewinnt, darf die goldene Giesskanne bis zur nächsten Ausgabe hüten." />
       <ol className="winner-list">{winners.map((winner) => <li className={winner.featured ? 'winner-featured' : ''} key={winner.year}><span className="winner-year">{winner.year}</span><p>{winner.names}</p><span className="winner-mark" aria-hidden="true">{winner.featured ? '✳' : '↗'}</span></li>)}</ol>
       <div className="winner-note"><span>✳</span><p>Das Siegerteam verewigt seine Namen auf der goldenen Giesskanne – bis die nächste Ausgabe einen neuen Champion kürt.</p></div>
+      <section className="participant-stats" aria-labelledby="participant-stats-title">
+        <div className="participant-stats-heading">
+          <div><p className="eyebrow">DAS SCOREBOARD</p><h2 id="participant-stats-title">Alle Teilnehmenden.</h2><p>Teilnahmen und Platzierungen bei den Linoso Games.</p></div>
+          <label className="participant-search"><span className="visually-hidden">Teilnehmende suchen</span><input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Name suchen …" /></label>
+        </div>
+        <div className="participant-table-wrap"><table className="participant-table">
+          <thead><tr><th scope="col">Name</th><th scope="col">Teiln.</th><th scope="col">1.</th><th scope="col">2.</th><th scope="col">3.</th></tr></thead>
+          <tbody>{leaderboard.length ? leaderboard.map((participant) => <tr key={participant.name}><th scope="row">{participant.name}</th><td>{participant.editions}</td><td>{participant.first}</td><td>{participant.second}</td><td>{participant.third}</td></tr>) : <tr><td className="participant-empty" colSpan="5">Keine Teilnehmenden gefunden.</td></tr>}</tbody>
+        </table></div>
+      </section>
     </section>
   </>;
 }
@@ -158,7 +173,7 @@ function ImprintPage() {
 
 function InstallDialog({ onClose, standalone, canInstall, onInstall }) {
   if (standalone) return null;
-  return <div className="install-modal" role="dialog" aria-modal="true" aria-labelledby="install-title"><button className="modal-close" onClick={onClose} aria-label="Schliessen"><Icon name="close" /></button><span className="modal-icon">＋</span><p className="eyebrow">EINMAL SPEICHERN</p><h2 id="install-title">Linoso in deiner Hosentasche.</h2><p>Füge die Linoso Games zum Home-Bildschirm hinzu – dann öffnet sich die Seite ohne Browser-Leiste und fühlt sich wie eine App an.</p>{canInstall ? <button className="button button-dark" onClick={onInstall}>Jetzt installieren <Icon name="arrow" size={17} /></button> : <ol><li>Tippe in Safari auf <strong>Teilen</strong> <span aria-hidden="true">↑</span></li><li>Wähle <strong>Zum Home-Bildschirm</strong></li><li>Tippe oben rechts auf <strong>Hinzufügen</strong></li></ol>}</div>;
+  return <div className="install-modal" role="dialog" aria-modal="true" aria-labelledby="install-title"><button className="modal-close" onClick={onClose} aria-label="Schliessen"><Icon name="close" /></button><span className="modal-icon">＋</span><p className="eyebrow">EINMAL SPEICHERN</p><h2 id="install-title">Linosogames in deiner Hosentasche.</h2><p>Füge Linosogames zum Home-Bildschirm hinzu – dann öffnet sich die Seite ohne Browser-Leiste und fühlt sich wie eine App an.</p>{canInstall ? <button className="button button-dark" onClick={onInstall}>Jetzt installieren <Icon name="arrow" size={17} /></button> : <ol><li>Tippe in Safari auf <strong>Teilen</strong> <span aria-hidden="true">↑</span></li><li>Wähle <strong>Zum Home-Bildschirm</strong></li><li>Tippe oben rechts auf <strong>Hinzufügen</strong></li></ol>}</div>;
 }
 
 function MobileTabBar({ route }) {
@@ -193,7 +208,7 @@ export default function App() {
 
   useEffect(() => {
     const names = { home: 'Start', winners: 'Gewinner', tips: 'Tipps & Tricks', rules: 'Die Gebote', faq: 'FAQ', credits: 'Credits', impressum: 'Impressum' };
-    document.title = `${names[route] || 'Start'} · Linoso Games`;
+    document.title = `${names[route] || 'Start'} · Linosogames`;
   }, [route]);
 
   async function startInstall() {

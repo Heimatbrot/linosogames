@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Linoso Games",
-  "short_name": "Linoso",
+  "name": "Linosogames",
+  "short_name": "Linosogames",
   "description": "Geburtstage, Spiele, Teams und die goldene Giesskanne.",
   "start_url": "./#/home",
   "scope": "./",

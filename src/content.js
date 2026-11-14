@@ -14,6 +14,25 @@ export const winners = [
   { year: '2022', names: 'Sean (1), Jana (1) und Valerio (1)' },
 ];
 
+// Scoreboard: add one record per participant and update their counts after each edition.
+export const participantStats = [
+  { name: 'Linus', editions: 5, first: 1, second: 3, third: 1 },
+  { name: 'Sean', editions: 5, first: 3, second: 0, third: 1 },
+  { name: 'Lara', editions: 5, first: 0, second: 1, third: 3 },
+  { name: 'Nicole', editions: 4, first: 1, second: 2, third: 1 },
+  { name: 'Simon', editions: 5, first: 1, second: 1, third: 2 },
+  { name: 'Caroline', editions: 5, first: 2, second: 2, third: 1 },
+  { name: 'Valerio', editions: 5, first: 2, second: 0, third: 1 },
+  { name: 'Marc', editions: 5, first: 1, second: 2, third: 1 },
+  { name: 'Sofia', editions: 4, first: 1, second: 0, third: 2 },
+  { name: 'Jana', editions: 4, first: 1, second: 0, third: 0 },
+  { name: 'Gian', editions: 1, first: 0, second: 1, third: 0 },
+  { name: 'Agostina', editions: 1, first: 0, second: 1, third: 0 },
+  { name: 'Livio', editions: 3, first: 0, second: 0, third: 2 },
+  { name: 'Andri', editions: 4, first: 1, second: 1, third: 2 },
+  { name: 'Jonas', editions: 1, first: 0, second: 1, third: 0 },
+];
+
 export const tips = [
   ['Alles ist normal', 'Zu wenig getrunken', 'Such dir mehr Getränke'],
   ['Klumpiges Spucken', 'Zu wenig Nahrung', 'Hol dir was zu essen – und trink etwas Wasser.'],
