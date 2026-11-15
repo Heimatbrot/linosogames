@@ -254,10 +254,10 @@ export default function App() {
   return (
     <div className={`app-shell ${standalone ? 'is-standalone' : ''} ${route === 'app' ? 'is-embedded-app' : ''}`}>
       <a className="skip-link" href="#main-content">Zum Inhalt springen</a>
-      {route !== 'app' && <Header route={route} standalone={standalone} onInstall={startInstall} />}
+      <Header route={route} standalone={standalone} onInstall={startInstall} />
       <main id="main-content" key={route} className="main-content">{currentPage}</main>
       {route !== 'app' && <Footer />}
-      {route !== 'app' && <MobileTabBar route={route} />}
+      <MobileTabBar route={route} />
       {showInstall && <div className="modal-backdrop" onClick={(event) => { if (event.target === event.currentTarget) setShowInstall(false); }}><InstallDialog standalone={standalone} canInstall={Boolean(installPrompt)} onInstall={startInstall} onClose={() => setShowInstall(false)} /></div>}
     </div>
   );
