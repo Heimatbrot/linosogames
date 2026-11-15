@@ -256,7 +256,7 @@ export default function App() {
       <a className="skip-link" href="#main-content">Zum Inhalt springen</a>
       <Header route={route} standalone={standalone} onInstall={startInstall} />
       <main id="main-content" key={route} className="main-content">{currentPage}</main>
-      <Footer />
+      {route !== 'app' && <Footer />}
       <MobileTabBar route={route} />
       {showInstall && <div className="modal-backdrop" onClick={(event) => { if (event.target === event.currentTarget) setShowInstall(false); }}><InstallDialog standalone={standalone} canInstall={Boolean(installPrompt)} onInstall={startInstall} onClose={() => setShowInstall(false)} /></div>}
     </div>
