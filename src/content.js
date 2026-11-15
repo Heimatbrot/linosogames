@@ -4,6 +4,7 @@ export const navigation = [
   { id: 'tips', label: 'Tipps', icon: 'spark' },
   { id: 'rules', label: 'Regeln', icon: 'book' },
   { id: 'faq', label: 'FAQ', icon: 'help' },
+  { id: 'app', label: 'App', icon: 'app' },
 ];
 
 export const winners = [

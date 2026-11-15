@@ -42,6 +42,8 @@ img { max-width: 100%; }
 .compact-nav { display: none; }
 
 .main-content { min-height: 52vh; animation: page-enter .35s ease both; }
+.embedded-app-page { width: 100%; min-height: 78svh; background: var(--paper); }
+.embedded-app-frame { display: block; width: 100%; height: 78svh; min-height: 620px; border: 0; background: #fff; }
 @keyframes page-enter { from { opacity: .4; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 .content-width { width: min(100% - 64px, 1040px); margin-inline: auto; }
 .hero-photo, .trophy-hero { position: relative; min-height: clamp(300px, 32vw, 430px); display: flex; align-items: center; color: white; background-color: #553d32; background-position: center 42%; background-size: cover; }
@@ -242,6 +244,8 @@ img { max-width: 100%; }
   .install-link span:last-child::after { content: "App"; font-size: .7rem; }
   .desktop-nav { display: none; }
   .compact-nav { position: sticky; z-index: 9; top: 0; display: flex; gap: 2px; overflow-x: auto; padding: 0 14px; border-bottom: 1px solid var(--line); background: rgba(246,243,236,.96); scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .embedded-app-page { min-height: 76svh; }
+  .embedded-app-frame { height: 76svh; min-height: 580px; }
   .compact-nav::-webkit-scrollbar { display: none; }
   .compact-nav a { min-height: 47px; display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 0 10px; color: #77736a; font-size: .71rem; font-weight: 700; white-space: nowrap; }
   .compact-nav a.active { color: var(--red); }

@@ -5,7 +5,7 @@ import heroPhoto from './assets/linoso-hero.jpg';
 import trophyPhoto from './assets/linoso-gold.jpg';
 import { navigation, participantStats, questions, rules, tips, winners } from './content.js';
 
-const pages = ['home', 'winners', 'tips', 'rules', 'faq', 'credits', 'impressum'];
+const pages = ['home', 'winners', 'tips', 'rules', 'faq', 'app', 'credits', 'impressum'];
 const isStandalone = () => window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 
 function Icon({ name, size = 19 }) {
@@ -15,6 +15,7 @@ function Icon({ name, size = 19 }) {
     spark: <><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3z" /><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z" /></>,
     book: <><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22z" /><path d="M4 5.5v14A2.5 2.5 0 0 1 6.5 17H20M8 7h8" /></>,
     help: <><circle cx="12" cy="12" r="9" /><path d="M9.6 9a2.5 2.5 0 1 1 4.4 1.6c-1.2 1.2-2 1.5-2 3.4M12 17.5h.01" /></>,
+    app: <><rect x="3" y="4" width="18" height="13" rx="2" /><path d="M8 21h8M12 17v4" /></>,
     arrow: <><path d="M5 12h14M13 6l6 6-6 6" /></>,
     close: <><path d="m6 6 12 12M18 6 6 18" /></>,
   };
@@ -176,6 +177,19 @@ function ImprintPage() {
   return <section className="content-width interior-page simple-page"><PageHeading eyebrow="RECHTLICHES" title="Impressum" description="Für weitere Informationen verwende bitte das Kontaktformular." /><article className="imprint-card"><p>Die Linoso Games sind weder ein Verein noch verfolgen sie einen kommerziellen oder journalistischen Zweck. Diese Website dient lediglich der Unterhaltung von Freunden und Familie. Wir bieten weder Waren, Werke noch Leistungen an.</p><dl><div><dt>Kontaktadresse</dt><dd>Linoso Games<br />8000 Zürich</dd></div><div><dt>Kontakt Orga-Team</dt><dd><a href="mailto:linosogames@gmail.com">linosogames@gmail.com</a></dd></div></dl><a className="button button-dark" href="#/faq">Zum Kontaktformular <Icon name="arrow" size={18} /></a></article></section>;
 }
 
+function EmbeddedAppPage() {
+  return <section className="embedded-app-page" aria-label="Linosogames App">
+    <iframe
+      className="embedded-app-frame"
+      src="https://linosogames.duckdns.org/"
+      title="Linosogames App"
+      allow="fullscreen; clipboard-read; clipboard-write"
+      allowFullScreen
+      referrerPolicy="strict-origin-when-cross-origin"
+    />
+  </section>;
+}
+
 function InstallDialog({ onClose, standalone, canInstall, onInstall }) {
   if (standalone) return null;
   return <div className="install-modal" role="dialog" aria-modal="true" aria-labelledby="install-title"><button className="modal-close" onClick={onClose} aria-label="Schliessen"><Icon name="close" /></button><span className="modal-icon">＋</span><p className="eyebrow">EINMAL SPEICHERN</p><h2 id="install-title">Linosogames in deiner Hosentasche.</h2><p>Füge Linosogames zum Home-Bildschirm hinzu – dann öffnet sich die Seite ohne Browser-Leiste und fühlt sich wie eine App an.</p>{canInstall ? <button className="button button-dark" onClick={onInstall}>Jetzt installieren <Icon name="arrow" size={17} /></button> : <ol><li>Tippe in Safari auf <strong>Teilen</strong> <span aria-hidden="true">↑</span></li><li>Wähle <strong>Zum Home-Bildschirm</strong></li><li>Tippe oben rechts auf <strong>Hinzufügen</strong></li></ol>}</div>;
@@ -212,7 +226,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const names = { home: 'Start', winners: 'Gewinner', tips: 'Tipps & Tricks', rules: 'Die Gebote', faq: 'FAQ', credits: 'Credits', impressum: 'Impressum' };
+    const names = { home: 'Start', winners: 'Gewinner', tips: 'Tipps & Tricks', rules: 'Die Gebote', faq: 'FAQ', app: 'App', credits: 'Credits', impressum: 'Impressum' };
     document.title = `${names[route] || 'Start'} · Linosogames`;
   }, [route]);
 
@@ -232,6 +246,7 @@ export default function App() {
     tips: <TipsPage />,
     rules: <RulesPage />,
     faq: <FAQPage />,
+    app: <EmbeddedAppPage />,
     credits: <CreditsPage />,
     impressum: <ImprintPage />,
   }[route] || <HomePage />;
