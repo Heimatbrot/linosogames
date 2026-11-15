@@ -244,8 +244,8 @@ img { max-width: 100%; }
   .install-link span:last-child::after { content: "App"; font-size: .7rem; }
   .desktop-nav { display: none; }
   .compact-nav { position: sticky; z-index: 9; top: 0; display: flex; gap: 2px; overflow-x: auto; padding: 0 14px; border-bottom: 1px solid var(--line); background: rgba(246,243,236,.96); scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-  .embedded-app-page { min-height: 76svh; }
-  .embedded-app-frame { height: 76svh; min-height: 580px; }
+  .embedded-app-page { min-height: 0; }
+  .embedded-app-frame { height: 58svh; min-height: 440px; }
   .compact-nav::-webkit-scrollbar { display: none; }
   .compact-nav a { min-height: 47px; display: inline-flex; flex: 0 0 auto; align-items: center; gap: 7px; padding: 0 10px; color: #77736a; font-size: .71rem; font-weight: 700; white-space: nowrap; }
   .compact-nav a.active { color: var(--red); }
